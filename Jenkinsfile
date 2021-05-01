@@ -4,7 +4,7 @@ def git_branch = 'main'
 pipeline
 {
     agent {
-        label 'master'
+        label 'awsserver'
     }
     stages
     {
