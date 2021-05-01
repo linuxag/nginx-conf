@@ -21,6 +21,14 @@ pipeline
             {
                 sh '''
                 sudo cp nginx.conf /etc/nginx/nginx.conf
+                '''
+            }
+        }
+        stage('nginx-restart')
+        {
+            steps
+            {
+                sh '''
                 sudo systemctl restart nginx
                 '''
             }
